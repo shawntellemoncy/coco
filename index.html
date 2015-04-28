@@ -2,6 +2,7 @@
 layout: default
 ---
 
-<h1>{{ site.name }}</h1>
+<h1>{{ site.name | capitalize }}</h1>
 
 {% include_relative _posts/1776-07-04-fourth.md %}
+{{ _posts/1776-07-04-fourth.md | markdownify }}
